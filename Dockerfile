@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.10-slim-bookworm
 
 # ---- Environment ----
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -10,9 +10,12 @@ ENV DEBIAN_FRONTEND=noninteractive
 WORKDIR /app
 
 # ---- System deps ----
-RUN apt-get update && apt-get install -y \
-    tzdata \
+
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install -y tzdata \
     && rm -rf /var/lib/apt/lists/*
+
 
 # ---- Python deps ----
 COPY requirements.txt .
