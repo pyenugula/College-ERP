@@ -19,7 +19,7 @@ RUN apt-get update \
 
 # ---- Python deps ----
 COPY requirements.txt .
-RUN pip install --upgrade pip \
+RUN pip install --upgrade pip  setuptools wheel \
     && pip install --no-cache-dir -r requirements.txt
 
 # ---- App code ----
