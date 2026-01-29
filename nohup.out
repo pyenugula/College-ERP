@@ -1,0 +1,221 @@
+System check identified some issues:
+
+WARNINGS:
+info.Assign: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.AssignTime: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.Attendance: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.AttendanceClass: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.AttendanceRange: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.AttendanceTotal: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.Marks: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.MarksClass: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.StudentCourse: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.User: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+Operations to perform:
+  Apply all migrations: admin, auth, authtoken, contenttypes, info, sessions
+Running migrations:
+  No migrations to apply.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified some issues:
+
+WARNINGS:
+info.Assign: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.AssignTime: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.Attendance: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.AttendanceClass: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.AttendanceRange: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.AttendanceTotal: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.Marks: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.MarksClass: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.StudentCourse: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+info.User: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the InfoConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+
+System check identified 10 issues (0 silenced).
+January 29, 2026 - 17:31:11
+Django version 5.2.10, using settings 'CollegeERP.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[29/Jan/2026 17:31:46] "GET / HTTP/1.1" 200 3961
+[29/Jan/2026 17:31:46] "GET /static/info/homepage/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+[29/Jan/2026 17:31:46] "GET /static/info/homepage/vendor/jquery/jquery.min.js HTTP/1.1" 200 86927
+[29/Jan/2026 17:31:46] "GET /static/info/homepage/css/heroic-features.css HTTP/1.1" 304 0
+[29/Jan/2026 17:31:46] "GET /static/info/images/teacher.png HTTP/1.1" 200 16048
+[29/Jan/2026 17:31:46] "GET /static/info/homepage/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 70682
+[29/Jan/2026 17:31:46] "GET /static/info/images/student.png HTTP/1.1" 200 21286
+[29/Jan/2026 17:31:49] "GET / HTTP/1.1" 200 3961
+[29/Jan/2026 17:31:58] "GET /info/add-teacher/ HTTP/1.1" 200 6389
+[29/Jan/2026 17:31:58] "GET /static/info/bootstrap/vendor/fontawesome-free/css/all.min.css HTTP/1.1" 404 1981
+[29/Jan/2026 17:33:00] "GET /info/ HTTP/1.1" 200 3961
+[29/Jan/2026 17:33:09] "GET /info/ HTTP/1.1" 200 3961
+[29/Jan/2026 17:33:11] "GET /admin/ HTTP/1.1" 200 12300
+[29/Jan/2026 17:33:12] "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[29/Jan/2026 17:33:12] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[29/Jan/2026 17:33:12] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[29/Jan/2026 17:33:12] "GET /static/admin/css/login.css HTTP/1.1" 200 951
+[29/Jan/2026 17:33:12] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[29/Jan/2026 17:33:12] "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[29/Jan/2026 17:33:12] "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[29/Jan/2026 17:33:12] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[29/Jan/2026 17:33:12] "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[29/Jan/2026 17:33:12] "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[29/Jan/2026 17:33:12] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[29/Jan/2026 17:33:12] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[29/Jan/2026 17:33:12] "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[29/Jan/2026 17:33:12] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[29/Jan/2026 17:33:12] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[29/Jan/2026 17:33:12] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[29/Jan/2026 17:33:13] "GET /admin/ HTTP/1.1" 200 12300
+[29/Jan/2026 17:33:27] "GET /admin/ HTTP/1.1" 200 12300
+[29/Jan/2026 17:33:40] "GET /admin/info/assign/add/ HTTP/1.1" 200 17597
+[29/Jan/2026 17:33:40] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[29/Jan/2026 17:33:40] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[29/Jan/2026 17:33:40] "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[29/Jan/2026 17:33:40] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[29/Jan/2026 17:33:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Jan/2026 17:33:40] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[29/Jan/2026 17:33:40] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[29/Jan/2026 17:33:40] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+[29/Jan/2026 17:33:40] "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[29/Jan/2026 17:33:40] "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+[29/Jan/2026 17:33:40] "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+[29/Jan/2026 17:33:40] "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[29/Jan/2026 17:33:40] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[29/Jan/2026 17:33:40] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[29/Jan/2026 17:33:40] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[29/Jan/2026 17:33:41] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[29/Jan/2026 17:33:41] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[29/Jan/2026 17:33:41] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[29/Jan/2026 17:33:41] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+[29/Jan/2026 17:33:41] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[29/Jan/2026 17:33:41] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[29/Jan/2026 17:33:41] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[29/Jan/2026 17:33:52] "GET /admin/info/class/?_to_field=id&_popup=1 HTTP/1.1" 200 4147
+[29/Jan/2026 17:33:52] "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[29/Jan/2026 17:33:52] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+[29/Jan/2026 17:33:53] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[29/Jan/2026 17:33:57] "GET /admin/info/class/add/?_changelist_filters=_to_field%3Did%26_popup%3D1&_popup=1&_to_field=id HTTP/1.1" 200 11914
+[29/Jan/2026 17:33:57] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[29/Jan/2026 17:33:57] "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+[29/Jan/2026 17:33:57] "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[29/Jan/2026 17:33:57] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+[29/Jan/2026 17:33:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Jan/2026 17:34:10] "GET /admin/info/dept/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7523
+[29/Jan/2026 17:34:10] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Jan/2026 17:34:10] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:10] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[29/Jan/2026 17:34:11] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[29/Jan/2026 17:34:33] "POST /admin/info/dept/add/?_to_field=id&_popup=1 HTTP/1.1" 200 325
+[29/Jan/2026 17:34:33] "GET /static/admin/js/popup_response.js HTTP/1.1" 200 532
+[29/Jan/2026 17:34:42] "POST /admin/info/class/add/?_changelist_filters=_to_field%3Did%26_popup%3D1 HTTP/1.1" 200 334
+[29/Jan/2026 17:34:48] "GET /admin/info/course/?_to_field=id&_popup=1 HTTP/1.1" 200 4152
+[29/Jan/2026 17:34:48] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[29/Jan/2026 17:34:49] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[29/Jan/2026 17:34:57] "GET /admin/info/ HTTP/1.1" 200 10051
+[29/Jan/2026 17:34:57] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[29/Jan/2026 17:34:57] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[29/Jan/2026 17:34:57] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[29/Jan/2026 17:34:57] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[29/Jan/2026 17:34:57] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[29/Jan/2026 17:35:00] "GET /admin/ HTTP/1.1" 200 13018
+[29/Jan/2026 17:35:03] "GET /admin/info/class/ HTTP/1.1" 200 14745
+[29/Jan/2026 17:35:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Jan/2026 17:35:03] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[29/Jan/2026 17:35:08] "GET /admin/info/course/ HTTP/1.1" 200 12362
+[29/Jan/2026 17:35:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Jan/2026 17:35:11] "GET /admin/info/dept/ HTTP/1.1" 200 14002
+[29/Jan/2026 17:35:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Jan/2026 17:35:14] "GET /admin/info/studentcourse/ HTTP/1.1" 200 12396
+[29/Jan/2026 17:35:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Jan/2026 17:35:17] "GET /admin/info/student/ HTTP/1.1" 200 12369
+[29/Jan/2026 17:35:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Jan/2026 17:35:19] "GET /admin/info/teacher/ HTTP/1.1" 200 12369
+[29/Jan/2026 17:35:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Jan/2026 17:35:21] "GET /admin/info/user/ HTTP/1.1" 200 15938
+[29/Jan/2026 17:35:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[29/Jan/2026 17:35:22] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[29/Jan/2026 17:35:22] "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+[29/Jan/2026 17:35:33] "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 12455
+[29/Jan/2026 17:35:33] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[29/Jan/2026 17:35:33] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[29/Jan/2026 17:35:33] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[29/Jan/2026 17:35:33] "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[29/Jan/2026 17:35:33] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[29/Jan/2026 17:35:33] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[29/Jan/2026 17:35:34] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[29/Jan/2026 17:35:37] "GET /admin/ HTTP/1.1" 200 13018
+[29/Jan/2026 17:35:37] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[29/Jan/2026 17:35:37] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[29/Jan/2026 18:04:01] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x8b\x84ÕçB¨5`õàd\x93×Û\x9a')
+[29/Jan/2026 18:04:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[29/Jan/2026 18:04:01] code 400, message Bad request version ('À\x14À')
+[29/Jan/2026 18:04:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[29/Jan/2026 18:04:02] "GET / HTTP/1.1" 302 0
+[29/Jan/2026 18:04:02] "GET /accounts/login/?next=/ HTTP/1.1" 200 2005
+Not Found: /login
+[29/Jan/2026 18:04:03] "GET /login HTTP/1.1" 404 10724
