@@ -12,8 +12,19 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 
+from dotenv import load_dotenv
+
+load_dotenv()  # Load environment variables from .env file
+
+# Read from environment variables
+SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
+#ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost, *').split(',')
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Quick-start development settings - unsuitable for production
@@ -83,8 +94,12 @@ WSGI_APPLICATION = 'CollegeERP.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DB_NAME', 'college_erp'),
+        'USER': os.getenv('DB_USER', 'admin'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'admin123'),
+        'HOST': os.getenv('DB_HOST', 'db'),  # 'db' is the name of the DB container
+        'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
 

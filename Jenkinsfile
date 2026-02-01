@@ -5,9 +5,11 @@ pipeline {
 
     environment {
         ACR_LOGIN_SERVER = "collegeerp.azurecr.io"
-        IMAGE_NAME = "college-erp"
-        IMAGE_TAG = "staging-${BUILD_NUMBER}"
-        FULL_IMAGE = "${ACR_LOGIN_SERVER}/${IMAGE_NAME}:${IMAGE_TAG}"
+        WEB_IMAGE_NAME = "college-erp-web"
+        POSTGRES_IMAGE_NAME = "college-erp-postgres"
+        IMAGE_TAG = "${BUILD_NUMBER}"
+        FULL_WEB_IMAGE = "${ACR_LOGIN_SERVER}/${WEB_IMAGE_NAME}:${IMAGE_TAG}"
+        FULL_POSTGRES_IMAGE = "${ACR_LOGIN_SERVER}/${POSTGRES_IMAGE_NAME}:${IMAGE_TAG}"
     }
 
     stages {
@@ -18,23 +20,50 @@ pipeline {
             }
         }
 
-        stage("Build Docker Image") {
+        stage("Build Web Docker Image") {
             steps {
-                sh """
-                  docker build -t ${FULL_IMAGE} .
-                """
+                script {
+                    // Build the web app image
+                    sh """
+                        docker build -t ${FULL_WEB_IMAGE} -f Dockerfile.web .
+                    """
+                }
             }
         }
 
-        stage("Trivy Image Scan (HIGH, CRITICAL)") {
+        stage("Build PostgreSQL Docker Image") {
+            steps {
+                script {
+                    // Build the PostgreSQL image
+                    sh """
+                        docker build -t ${FULL_POSTGRES_IMAGE} -f Dockerfile.postgres .
+                    """
+                }
+            }
+        }
+
+        stage("Trivy Image Scan (Web Image)") {
             steps {
                 sh """
                   trivy image \
                     --severity HIGH,CRITICAL \
                     --ignore-unfixed \
-		    --exit-code 1 \
+                    --exit-code 1 \
                     --no-progress \
-                    ${FULL_IMAGE}
+                    ${FULL_WEB_IMAGE}
+                """
+            }
+        }
+
+        stage("Trivy Image Scan (PostgreSQL Image)") {
+            steps {
+                sh """
+                  trivy image \
+                    --severity HIGH,CRITICAL \
+                    --ignore-unfixed \
+                    --exit-code 1 \
+                    --no-progress \
+                    ${FULL_POSTGRES_IMAGE}
                 """
             }
         }
@@ -56,10 +85,18 @@ pipeline {
             }
         }
 
-        stage("Push Image to ACR") {
+        stage("Push Web Image to ACR") {
             steps {
                 sh """
-                  docker push ${FULL_IMAGE}
+                  docker push ${FULL_WEB_IMAGE}
+                """
+            }
+        }
+
+        stage("Push PostgreSQL Image to ACR") {
+            steps {
+                sh """
+                  docker push ${FULL_POSTGRES_IMAGE}
                 """
             }
         }
@@ -67,17 +104,18 @@ pipeline {
 
     post {
         success {
-            echo "✅ Image built, scanned, and pushed successfully"
+            echo "✅ Web and PostgreSQL images built, scanned, and pushed successfully"
         }
 
         failure {
-            echo "❌ Build failed — image was NOT pushed"
+            echo "❌ Build failed — images were NOT pushed"
         }
 
         cleanup {
             sh """
               docker logout ${ACR_LOGIN_SERVER} || true
-              docker image rm ${FULL_IMAGE} || true
+              docker image rm ${FULL_WEB_IMAGE} || true
+              docker image rm ${FULL_POSTGRES_IMAGE} || true
               docker system prune -f || true
             """
         }
